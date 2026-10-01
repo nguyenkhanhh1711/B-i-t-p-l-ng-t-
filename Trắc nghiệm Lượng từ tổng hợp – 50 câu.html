@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trắc nghiệm Lượng từ tổng hợp – 50 câu</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800&family=Cormorant+Garamond:wght@500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eaf6ff;--card:#fff;--ink:#12324a;--mute:#56758c;--sky:#3da5f0;--sky2:#8fd0ff;--gr:#4faa5f;--yl:#ffd93b;--ok:#2fa36b;--okb:#e1f7ec;--no:#e0507a;--nob:#ffe6ee;--line:#d3e8f7;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:linear-gradient(180deg,#eaf6ff,#f6fbf2 60%,#fffbe6);color:var(--ink);font:400 16px/1.7 "Be Vietnam Pro",system-ui,sans-serif;overflow-x:hidden}
+#top{position:fixed;top:0;left:0;right:0;z-index:50;padding:calc(10px + env(safe-area-inset-top,0px)) 14px 10px;background:#ffffffe6;backdrop-filter:blur(8px);box-shadow:0 4px 20px #3da5f033;transform:translateY(-110%);transition:transform .4s}
+#top.on{transform:none}
+.tb{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:14px;font:600 14px "Be Vietnam Pro"}
+.pg{flex:1;height:10px;border-radius:10px;background:var(--line);overflow:hidden}
+.pg i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--sky),var(--gr));border-radius:10px;transition:width .5s}
+.tb span{white-space:nowrap}.tb .o{color:var(--ok)}.tb .w{color:var(--no)}
+#snd{border:0;background:none;font-size:20px;cursor:pointer}
+/* hero */
+header{position:relative;height:100vh;min-height:600px;overflow:hidden;text-align:center;background:linear-gradient(180deg,#2f9bf0 0,#5fb8f7 55%,#a9dcff 85%)}
+.cl{position:absolute;border-radius:50%;background:radial-gradient(circle at 40% 40%,#fff 30%,#ffffffcc 55%,transparent 72%);filter:blur(3px);animation:dr 50s linear infinite alternate}
+@keyframes dr{to{transform:translateX(60px)}}
+.pt{position:absolute;width:26px;height:12px;border-radius:50%;background:#fff3a0;opacity:.85;animation:fall 9s linear infinite}
+@keyframes fall{from{transform:translate(0,-40px) rotate(0)}to{transform:translate(120px,105vh) rotate(260deg)}}
+.hc{position:absolute;top:9vh;left:0;right:0;z-index:5;padding:0 18px}
+.hc small{display:block;font:500 14px "Be Vietnam Pro";letter-spacing:3px;color:#fff;text-shadow:0 1px 6px #0003}
+h1{font:600 clamp(40px,10vw,92px)/1 "Cormorant Garamond",serif;color:#fff;letter-spacing:2px;text-shadow:0 2px 14px #1b6fb855;border-bottom:2px solid #fff;display:inline-block;padding-bottom:6px}
+.scr{font:600 clamp(30px,7vw,56px) "Dancing Script",cursive;color:#fff3a0;margin-top:-4px;text-shadow:0 2px 10px #1b6fb855}
+.sub{max-width:520px;margin:6px auto 18px;color:#fff;text-shadow:0 1px 8px #1b6fb877}
+.go{border:0;background:#fff;color:var(--ink);font:600 16px "Be Vietnam Pro";padding:11px 28px;border-radius:30px;cursor:pointer;box-shadow:0 8px 24px #1b6fb855;transition:.25s}
+.go:hover{transform:translateY(-3px) scale(1.04)}
+.hill{position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(180deg,#b6e06b,#6fbf4c 55%,#4d9a3c)}
+.hill:before{content:"";position:absolute;left:-10%;right:-10%;top:-60px;height:130px;border-radius:50%;background:#a9d95f}
+.van{position:absolute;bottom:22%;left:0;width:210px;z-index:3;animation:drive 22s linear infinite}
+@keyframes drive{from{transform:translateX(-240px)}to{transform:translateX(calc(100vw + 40px))}}
+.van svg{animation:bob .5s ease-in-out infinite alternate;display:block}
+@keyframes bob{to{transform:translateY(-3px)}}
+#fl{position:absolute;left:0;right:0;bottom:0;width:100%;height:30%;z-index:4}
+.sw{transform-origin:bottom;animation:sw 4s ease-in-out infinite alternate}
+@keyframes sw{to{transform:skewX(3deg)}}
+/* body */
+.wrap{max-width:860px;margin:0 auto;padding:0 18px 140px}
+.tip{margin:36px 0 10px;padding:18px 22px;border-radius:22px;background:#fffbe0;border:2px dashed var(--yl);font-size:15px}
+.tip b{color:#b78b00}
+.sec{margin:46px 0 14px;display:flex;align-items:center;gap:14px}
+.sec span{font:800 18px "Be Vietnam Pro";background:var(--sky);color:#fff;padding:2px 18px;border-radius:20px;white-space:nowrap}
+.sec:after{content:"";flex:1;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--sky2),transparent)}
+.q{background:var(--card);border-radius:26px;padding:20px 24px;margin-bottom:16px;box-shadow:0 10px 30px #3da5f01f;border-left:7px solid var(--sky2);opacity:0;transform:translateY(34px);transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1),border-color .3s}
+.q.on{opacity:1;transform:none}
+.q.ok{border-left-color:var(--ok)}.q.no{border-left-color:var(--no)}
+.n{display:inline-block;background:var(--sky);color:#fff;font:800 13px "Be Vietnam Pro";padding:0 14px;border-radius:20px;margin-bottom:4px}
+.q h4{font:600 18px/1.55 "Be Vietnam Pro";margin-bottom:12px}
+.q h4 u{text-decoration:none;display:inline-block;min-width:54px;border-bottom:3px solid var(--yl);text-align:center;color:var(--sky);font-weight:800}
+.op{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:520px){.op{grid-template-columns:1fr}}
+.op button{display:flex;gap:10px;align-items:center;font:500 16px "Be Vietnam Pro";text-align:left;padding:9px 14px;border-radius:16px;border:2px solid var(--line);background:#f7fbff;color:var(--ink);cursor:pointer;transition:.2s}
+.op button b{flex:none;width:28px;height:28px;border-radius:50%;background:var(--line);display:grid;place-items:center;font:800 13px "Be Vietnam Pro";transition:.2s}
+.op button:hover:not(:disabled){border-color:var(--sky);transform:translateY(-2px)}
+.op button:disabled{cursor:default}
+.op .c{background:var(--ok);border-color:var(--ok);color:#fff}.op .c b{background:#fff;color:var(--ok)}
+.op .x{background:var(--no);border-color:var(--no);color:#fff;animation:sk .4s}.op .x b{background:#fff;color:var(--no)}
+@keyframes sk{25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+.ex{margin-top:12px;padding:12px 16px;border-radius:16px;font-size:15px;animation:up .45s}
+.ex.ok{background:var(--okb);border-left:5px solid var(--ok)}.ex.no{background:var(--nob);border-left:5px solid var(--no)}
+@keyframes up{from{opacity:0;transform:translateY(10px)}}
+.rt{margin-top:12px}
+.btn{font:600 14px "Be Vietnam Pro";border:2px solid var(--sky);background:transparent;color:var(--sky);padding:4px 16px;border-radius:24px;cursor:pointer;margin:4px 6px 0 0;transition:.2s}
+.btn:hover{background:var(--sky);color:#fff}
+#res{text-align:center;background:linear-gradient(160deg,#3da5f0,#2a7fd0);color:#fff;border-radius:32px;padding:38px 22px;margin-top:50px;box-shadow:0 16px 40px #3da5f055}
+#res h2{font:600 34px "Cormorant Garamond",serif}
+#res .big{font:800 clamp(48px,12vw,84px)/1.1 "Be Vietnam Pro";color:#fff3a0}
+#res .btn{border-color:#fff;color:#fff}#res .btn:hover{background:#fff;color:#2a7fd0}
+#wl{margin-top:10px;font-size:14px}
+#wl a{color:#fff3a0;margin:0 4px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.q{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="top"><div class="tb"><span>🌼 Lượng từ</span><div class="pg"><i id="pg"></i></div><span id="st">0/50</span><span class="o" id="so">✔ 0</span><span class="w" id="sw">✘ 0</span><button id="snd" aria-label="Âm thanh">🔊</button></div></div>
+
+<header>
+  <div class="cl" style="left:-5%;top:18%;width:420px;height:200px"></div><div class="cl" style="left:30%;top:30%;width:560px;height:240px;animation-delay:-20s"></div><div class="cl" style="right:-8%;top:22%;width:420px;height:190px;animation-delay:-10s"></div>
+  <div id="pts"></div>
+  <div class="hc"><small>GOOD MORNING · TRẮC NGHIỆM TỔNG HỢP</small><h1>QUANTIFIERS</h1><div class="scr">Practice</div><p class="sub">50 câu kiểm tra toàn diện kỹ năng phân tích danh từ và hòa hợp chủ - vị. Làm xong mỗi câu là có đáp án và giải thích ngay.</p><button class="go" id="go">Bắt đầu làm bài ➔</button></div>
+  <div class="hill"></div>
+  <div class="van"><svg viewBox="0 0 210 100"><path d="M10 78V40Q10 28 24 26L140 24Q166 24 182 46L200 62Q206 68 206 78Z" fill="#6fc47c"/><path d="M10 52H206V78H10Z" fill="#f4efd8"/><path d="M28 32H78V50H24Z M86 32H132V50H86Z M140 32H158Q170 34 178 48H140Z" fill="#bfe6ff"/><circle cx="52" cy="80" r="15" fill="#2c3e50"/><circle cx="52" cy="80" r="7" fill="#cfd8dc"/><circle cx="160" cy="80" r="15" fill="#2c3e50"/><circle cx="160" cy="80" r="7" fill="#cfd8dc"/><circle cx="198" cy="58" r="5" fill="#fff3a0"/></svg></div>
+  <svg id="fl" viewBox="0 0 1440 300" preserveAspectRatio="xMidYMax slice"></svg>
+</header>
+
+<main class="wrap">
+  <div class="tip"><b>Yêu cầu:</b> Đọc kỹ danh từ phía sau chỗ trống (<b>đếm được / không đếm được / số ít / số nhiều</b>) và phân tích ý nghĩa của câu (<b>khẳng định / phủ định / nghi vấn</b>) để chọn đáp án chính xác nhất. Chọn đáp án xong, lời giải thích hiện ngay bên dưới.</div>
+  <div id="qs"></div>
+  <div id="res"><h2>Kết quả của bạn</h2><div class="big" id="big">0 / 50</div><p id="msg">Hoàn thành cả 50 câu để nhận lời nhắn nhé.</p><div id="wl"></div><div class="rt"><button class="btn" id="rw">Làm lại các câu sai</button><button class="btn" id="ra">Làm lại tất cả ↺</button></div></div>
+</main>
+
+<script>
+const $=s=>document.querySelector(s);
+let ac,on=true;
+function tone(f,t,d,ty,v,to){const o=ac.createOscillator(),g=ac.createGain();o.type=ty;o.frequency.setValueAtTime(f,t);if(to)o.frequency.exponentialRampToValueAtTime(to,t+d);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+.015);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(ac.destination);o.start(t);o.stop(t+d+.05)}
+function sfx(ok){if(!on)return;ac=ac||new(window.AudioContext||window.webkitAudioContext)();ac.resume();const t=ac.currentTime;if(ok)[660,880,1175].forEach((f,i)=>tone(f,t+i*.09,.4,"sine",.16));else{tone(300,t,.3,"triangle",.16,190);tone(220,t+.15,.35,"triangle",.14,150)}}
+$("#snd").onclick=()=>{on=!on;$("#snd").textContent=on?"🔊":"🔇"};
+const Q=[
+["Do you have ___ idea how to solve this puzzle?","a lot|any|many|some",1,"Câu <b>nghi vấn</b> nên dùng <b>any</b> (any idea). “A lot” cần “of”, “many” đi với danh từ số nhiều."],
+["We need a large amount of ___ to build this house.","workers|bricks|sand|materials",2,"A large amount of + danh từ <b>không đếm được</b>. Chỉ “sand” (cát) không đếm được, các từ còn lại là số nhiều."],
+["She visits her grandparents ___ weekend.","all|every|many|some",1,"<b>Every weekend</b> = mỗi cuối tuần (every + danh từ số ít, nói về thói quen lặp lại)."],
+["We spent a great deal of ___ on this project.","time|days|hours|times",0,"A great deal of + danh từ không đếm được: <b>time</b>. Days, hours, times là số nhiều đếm được."],
+["Can I have ___ piece of cake, please?","others|the other|another|other",2,"<b>Another</b> + danh từ đếm được số ít = một miếng khác nữa. “Others” là đại từ số nhiều, “other” không đứng trước danh từ số ít."],
+["I tried to call him several times, but there was ___ answer.","no|any|some|none",0,"<b>no + danh từ</b> (no answer = không có ai trả lời). “None” không đứng trực tiếp trước danh từ; “any” cần cấu trúc phủ định (wasn't any)."],
+["___ of the furniture in this room is antique.","A few|Much|Many|Few",1,"Furniture là danh từ <b>không đếm được</b>, động từ “is” số ít, nên dùng <b>Much of</b>. A few, Many, Few đi với danh từ đếm được."],
+["The number of cars in this city ___ increasing rapidly.","have|are|were|is",3,"<b>The number of</b> + danh từ số nhiều → động từ chia <b>số ít</b>: is."],
+["There is ___ milk left in the bottle. We need to buy more.","a little|a few|little|few",2,"Milk không đếm được. “Cần mua thêm” nghĩa là gần hết (tiêu cực) → <b>little</b>."],
+["Could you lend me ___ dollars until tomorrow?","little|few|a little|a few",3,"Dollars đếm được số nhiều, ý xin mượn một ít (tích cực) → <b>a few</b>."],
+["I don't like these two shirts. Do you have ___?","some other|the others|any others|another",2,"Câu <b>nghi vấn</b> nên dùng <b>any others</b> (cái nào khác không). “Some” dùng cho khẳng định, “the others” là xác định."],
+["___ cars are parked in front of the building.","A little|Much|A lot of|A great deal of",2,"Cars đếm được số nhiều → <b>A lot of</b>. A little, Much, A great deal of dùng với danh từ không đếm được."],
+["She offered me tea or coffee, but I accepted ___ because I was tired.","either|both|none|neither",3,"Vì mệt nên từ chối cả hai thứ → <b>neither</b> (không cái nào trong hai)."],
+["___ student was given a certificate after the course.","All|Some|Many|Each",3,"Danh từ số ít “student” và động từ “was” → <b>Each</b> (từng học sinh được phát một chứng chỉ)."],
+["There are ___ reasons why I disagree with you.","a little|much|little|several",3,"Reasons là danh từ đếm được số nhiều → <b>several</b> (vài). Các lựa chọn còn lại dùng cho không đếm được."],
+["There is ___ hope that they will survive the crash.","little|a little|few|a few",0,"Hope không đếm được; sau tai nạn hy vọng rất mong manh (tiêu cực) → <b>little</b>."],
+["We have ___ time before the movie starts, so let's grab a snack.","little|a few|few|a little",3,"Time không đếm được; còn đủ thời gian để ăn nhẹ (tích cực) → <b>a little</b>."],
+["I don't have ___ money in my pocket right now.","any|many|a few|some",0,"Câu <b>phủ định</b> + money không đếm được → <b>any</b>."],
+["She has ___ patience for noisy children.","a few|few|a little|little",3,"Patience không đếm được, hàm ý cô ấy gần như không kiên nhẫn (tiêu cực) → <b>little</b>."],
+["I have two dictionaries. You can borrow ___ of them.","neither|either|both|all",1,"Chỉ có hai quyển, bạn mượn một trong hai → <b>either</b>."],
+["He drank ___ the water in the jug.","every|whole|all|each",2,"<b>All the</b> + danh từ = toàn bộ. Every/each đi với danh từ số ít đếm được, không dùng trước “the”."],
+["Fortunately, ___ passengers survived the accident.","a few|a little|few|little",0,"Có từ “Fortunately” (may mắn, tích cực); passengers đếm được số nhiều → <b>a few</b>."],
+["There are so ___ people in the room that I can't breathe.","a little|little|many|much",2,"So + <b>many</b> + danh từ đếm được số nhiều (people)."],
+["We must hurry. We have ___ time left.","little|a few|few|a little",0,"Phải khẩn trương nghĩa là còn rất ít thời gian (tiêu cực), time không đếm được → <b>little</b>."],
+["She put ___ sugar in her tea because she is on a diet.","little|a few|a little|few",0,"Ăn kiêng nên cho rất ít đường; sugar không đếm được → <b>little</b>."],
+["___ employee is expected to be at work by 8 AM.","Most|Many|All|Every",3,"Danh từ số ít + động từ “is” → <b>Every</b> (mọi nhân viên). Most, Many, All đi với số nhiều."],
+["We have ___ left to say to each other.","nothing|something|anything|everything",0,"Ngữ cảnh chia tay, không còn gì để nói với nhau → <b>nothing</b>."],
+["___ the information he gave us was incorrect.","Most of|Most|Many of|A lot",0,"Có “the” sau chỗ trống nên cần <b>Most of the</b>. Information là danh từ không đếm được, “Many of” không hợp."],
+["The number of people attending the concert ___ surprisingly low.","have been|was|were|are",1,"<b>The number of</b> → động từ số ít; câu thuật lại sự việc đã qua → <b>was</b>."],
+["Some students passed the exam, but ___ failed.","another|the other|other|others",3,"<b>Others</b> = những người khác (đại từ số nhiều, không xác định) trong nhóm “some... others...”."],
+["___ politicians are honest, which is quite sad.","Little|A little|Few|A few",2,"Politicians đếm được số nhiều, “quite sad” (đáng buồn) → tiêu cực → <b>Few</b>."],
+["___ side of the square measures 10 centimeters.","All|Each|Some|Both",1,"“Side” số ít, động từ “measures” số ít, nói từng cạnh → <b>Each</b>."],
+["___ people agree with his controversial opinion.","A few|A little|Little|Few",3,"Quan điểm gây tranh cãi nên rất ít người đồng ý (tiêu cực); people số nhiều → <b>Few</b>."],
+["___ children enjoy playing video games.","Most|Almost|The most|Most of",0,"<b>Most</b> + danh từ số nhiều (không có the) = hầu hết. “Almost” là trạng từ, “Most of” cần có từ xác định sau nó."],
+["A number of people ___ waiting for the bus.","is|has|was|are",3,"<b>A number of</b> + danh từ số nhiều → động từ số nhiều: are."],
+["I can't go out tonight. I have too ___ homework.","much|a few|few|many",0,"Homework không đếm được → too <b>much</b>."],
+["One of the wheels is broken. We need to find ___.","others|other|another|the other",2,"Cần tìm một cái bánh xe khác (số ít, không xác định) → <b>another</b>."],
+["Both of the candidates are good, but I don't think ___ of them will win.","both|all|either|neither",2,"Câu phủ định “don't think” + hai ứng viên → <b>either</b> (một trong hai). Neither đã mang nghĩa phủ định nên gây phủ định kép."],
+["Would you like ___ more coffee?","few|any|many|some",3,"Đây là <b>lời mời</b> lịch sự nên dùng <b>some</b>; coffee không đếm được."],
+["___ of my friends knew about the surprise party.","No|Not|Any|None",3,"<b>None of</b> + my friends = không ai trong số bạn bè. “No/Not” không đi với “of”; “Any” không hợp khẳng định."],
+["There are ___ apples in the fridge if you are hungry.","a little|few|a few|little",2,"Apples đếm được số nhiều, có táo để ăn khi đói (tích cực) → <b>a few</b>."],
+["There are two paths. One leads to the forest, and ___ leads to the river.","others|other|another|the other",3,"Chỉ có hai con đường, một cái còn lại xác định → <b>the other</b>."],
+["I've read ___ books you lent me, but not all of them.","some of the|some of|any of|some",0,"Sau of cần từ xác định: <b>some of the</b> books (một vài quyển trong số đã mượn)."],
+["___ candidate was interviewed for thirty minutes.","Many|Each|Some|All",1,"Danh từ số ít + was → <b>Each</b> (từng ứng viên được phỏng vấn 30 phút)."],
+["___ people think that money brings happiness.","Much|Many|A large amount of|A great deal of",1,"People đếm được số nhiều → <b>Many</b>. Các lựa chọn khác dùng với không đếm được."],
+["___ of the students in my class are from Vietnam.","Most of|Almost|The most|Most",0,"Có “the students” sau chỗ trống → <b>Most of</b> (hầu hết học sinh trong lớp)."],
+["He has ___ experience in management, so he is perfect for the job.","a lot of|few|a few|many",0,"Experience không đếm được, kinh nghiệm dồi dào nên phù hợp (tích cực) → <b>a lot of</b>."],
+["Only a small number of students ___ able to answer the question.","is|was|has been|were",3,"<b>A small number of</b> + danh từ số nhiều → động từ số nhiều: were (quá khứ)."],
+["___ the cake was eaten by the children.","All|All of|Every|Each of",1,"Cấu trúc <b>All of the</b> + danh từ. Every/Each không dùng với danh từ không đếm được. (All the cake cũng gặp, nhưng đáp án file là All of.)"],
+["I have two brothers, but ___ of them is married.","none|neither|both|either",1,"Chỉ có hai người và cả hai chưa kết hôn → <b>neither of them</b> (động từ số ít). “None” dùng cho từ 3 đối tượng trở lên."]];
+const res=Array(Q.length).fill(null);
+const L="ABCD";
+function card(i){const q=Q[i],o=q[1].split("|"),r=res[i];
+return `<span class="n">Câu ${i+1}</span><h4>${q[0].replace("___","<u>&nbsp;</u>")}</h4><div class="op">${o.map((t,j)=>`<button data-j="${j}"${r!==null?" disabled":""}><b>${L[j]}</b>${t}</button>`).join("")}</div><div class="ex"></div>`}
+function bind(i){const el=$("#q"+i),q=Q[i],bs=el.querySelectorAll("button"),ex=el.querySelector(".ex");ex.style.display="none";
+bs.forEach(b=>b.onclick=()=>{const j=+b.dataset.j,ok=j==q[2];res[i]=ok?1:0;bs.forEach(x=>x.disabled=true);bs[q[2]].classList.add("c");if(!ok)b.classList.add("x");el.classList.add(ok?"ok":"no");ex.style.display="block";ex.className="ex "+(ok?"ok":"no");ex.innerHTML=(ok?"✅ <b>Chính xác!</b> ":`❌ <b>Chưa đúng.</b> Đáp án đúng là <b>${L[q[2]]}. ${q[1].split("|")[q[2]]}</b>. `)+q[3];sfx(ok);upd()})}
+function build(){let h="";Q.forEach((q,i)=>{if(i%10==0)h+=`<div class="sec"><span>Chặng ${i/10+1} · Câu ${i+1}–${i+10}</span></div>`;h+=`<div class="q" id="q${i}">${card(i)}</div>`});$("#qs").innerHTML=h;Q.forEach((q,i)=>{bind(i);io.observe($("#q"+i))})}
+function upd(){const a=res.filter(x=>x!==null).length,o=res.filter(x=>x===1).length;$("#pg").style.width=a/50*100+"%";$("#st").textContent=a+"/50";$("#so").textContent="✔ "+o;$("#sw").textContent="✘ "+(a-o);$("#big").textContent=o+" / 50";
+const w=res.map((x,i)=>x===0?i:-1).filter(i=>i>=0);$("#wl").innerHTML=w.length?"Câu cần xem lại:"+w.map(i=>`<a href="#q${i}">${i+1}</a>`).join(" "):"";
+if(a==50){const p=o/50;$("#msg").textContent=p>=.9?"Xuất sắc! Bạn nắm lượng từ rất chắc.":p>=.7?"Khá tốt! Xem lại vài câu sai rồi thử lại nhé.":"Cố lên! Đọc lại phần phân biệt rồi làm lại các câu sai nha.";$("#res").scrollIntoView({block:"center"})}else $("#msg").textContent="Hoàn thành cả 50 câu để nhận lời nhắn nhé."}
+$("#rw").onclick=()=>{const w=res.map((x,i)=>x===0?i:-1).filter(i=>i>=0);if(!w.length)return;w.forEach(i=>{res[i]=null;const el=$("#q"+i);el.className="q on";el.innerHTML=card(i);bind(i)});upd();$("#q"+w[0]).scrollIntoView({block:"center"})};
+$("#ra").onclick=()=>{res.fill(null);build();upd();scrollTo({top:0})};
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}}),{threshold:.06});
+build();upd();
+$("#go").onclick=()=>$("#qs").scrollIntoView();
+addEventListener("scroll",()=>$("#top").classList.toggle("on",scrollY>innerHeight*.7));
+$("#pts").innerHTML=Array.from({length:9},(_,i)=>`<i class="pt" style="left:${Math.random()*95}%;animation-delay:${-i*1.1}s;animation-duration:${8+Math.random()*5}s"></i>`).join("");
+(function(){let s="";for(let i=0;i<110;i++){const x=Math.random()*1440,y=120+Math.random()*150,r=5+y/30;s+=`<line x1="${x}" y1="300" x2="${x+Math.random()*10-5}" y2="${y}" stroke="#4d9a3c" stroke-width="2.5"/><circle cx="${x}" cy="${y}" r="${r}" fill="#ffd93b"/><circle cx="${x}" cy="${y}" r="${r/2.4}" fill="#ffb300"/>`}$("#fl").innerHTML=`<g class="sw">${s}</g>`})();
+</script>
+</body>
+</html>
